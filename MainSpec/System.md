@@ -16,9 +16,9 @@ messagebox("Foo", "Bar");
 Implementation:
 
 ```cpp
-int messagebox(uintptr_t State) {
-	const char* Text = lua_tostring(State, 1);
-	const char* Caption = lua_tostring(State, 2);
+int messagebox(lua_State* L) {
+	const char* Text = lua_tostring(L, 1);
+	const char* Caption = lua_tostring(L, 2);
 	MessageBoxA(NULL, Text, Caption, NULL);
 	return 0;
 }
