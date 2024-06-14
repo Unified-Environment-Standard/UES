@@ -15,7 +15,8 @@ EnvFunctions = {
     "getregistry",
     "getgenv",
     "messagebox",
-    'MessageBox'
+    'MessageBox',
+    "msgbox"
 }
 
 for i,v in pairs(EnvFunctions) do
